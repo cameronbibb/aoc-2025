@@ -1,0 +1,21 @@
+{
+  "name": "aoc-2025",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "This repository contains my personal solutions for **Advent of Code 2025**.   I'm using this month as an opportunity to rebuild consistent coding habits,   practice problem-solving, and stay active on GitHub and LinkedIn.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameronbibb/aoc-2025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cameronbibb/aoc-2025/issues"
+  },
+  "homepage": "https://github.com/cameronbibb/aoc-2025#readme"
+}

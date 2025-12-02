@@ -1,3 +1,8 @@
+# Advent of Code safety rules
+input.txt
+day*/input*.txt
+*.txt
+
 # Logs
 logs
 *.log
