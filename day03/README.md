@@ -1,6 +1,6 @@
 Here are the actions teased out:
 
-Moving through the list battery banks.
+Moving through the list of battery banks.
 Moving through each battery bank selecting batteries.
   -Going to move through the battery bank until we find all the batteries we need, which is 12.
 Concatenating selected digits to a total.
