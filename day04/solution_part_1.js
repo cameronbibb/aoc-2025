@@ -1,8 +1,6 @@
 import fs from 'fs';
 
-const input = fs.readFileSync('example_input.txt', 'utf-8').trim().split('\n');
-
-//REMINDER!!! ONLY COUNT THE ROLLS '@' NOT THE '.', AS THE ROLLS ARE BEING REMOVED!!!
+const input = fs.readFileSync('input.txt', 'utf-8').trim().split('\n');
 
 function markForRemoval(wall, row, col) {
   let rollCount = 0;
@@ -24,9 +22,12 @@ function markForRemoval(wall, row, col) {
 function calculateRollAccessNumber(wall) {
   let total = 0;
   wall.forEach((row, rowIdx) => {
-    // if (markForRemoval) total++;
     for (let colIdx = 0; colIdx < row.length; colIdx++) {
-      console.log(markForRemoval(wall, rowIdx, colIdx));
+      if (wall[rowIdx][colIdx] === ".") continue;
+      if (markForRemoval(wall, rowIdx, colIdx)) {
+        total++;
+        // console.log("[", rowIdx, colIdx, "]", " = true");
+      }
     }
   });
   return total;
